@@ -19,11 +19,11 @@ class Project(models.Model):
             self.Description = text
         self.last_updated_date = timezone.now()
 
-    def __init__(self):
-        super(Project, self).__init__()
-        self.Subject = 'Please enter subject here!'
-        self.Description = 'Please enter description here!'
-        self.last_updated_date = None
+#    def __init__(self):
+#        super(Project, self).__init__()
+#        self.Subject = 'Please enter subject here!'
+#        self.Description = 'Please enter description here!'
+#        self.last_updated_date = None
 
     def __str__(self):
         return self.Subject
